@@ -86,7 +86,7 @@ public class ArrayStack <T> {
                 '}';
     }
 
-    public void merge(ArrayStack<T> s1, ArrayStack<T> s2) {
+    public void mm(ArrayStack<T> s1, ArrayStack<T> s2) {
         int newSize = s1.size() + s2.size();
 
 
@@ -127,7 +127,9 @@ public class ArrayStack <T> {
 
 
         System.out.println(s3);
-        s3.merge(s1, s2);
+
+        s3.mm(s1, s2);
+
         s3.display();
     }
 
